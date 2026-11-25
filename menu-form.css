@@ -1,0 +1,60 @@
+.main .menu-dialog {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(1000px, 94vw);
+  max-width: 94vw;
+  max-height: 92dvh;
+  padding: 24px clamp(18px, 4vw, 52px) 40px;
+  border-radius: 10px;
+  background: #171717;
+  color: #eee9df;
+  font-family: "Kelly Slab", Georgia, serif;
+}
+.main .menu-dialog *, .main .menu-dialog *::before { box-sizing: border-box; }
+.main .menu-dialog-close { float: none; display: block; margin: 0 0 24px auto; background: transparent; color: #ed9292; font: inherit; font-size: 20px; padding: 8px; top: 0; }
+.menu-card-heading { text-align: center; }
+.menu-card-heading h2 { background: #b24f4f; color: #f2c34b; padding: 18px; font-size: clamp(32px, 5vw, 58px); letter-spacing: .06em; margin: 0 0 28px; }
+.menu-card-heading > p { font-size: clamp(22px, 3vw, 30px); line-height: 1.4; margin: 0 0 24px; }
+.menu-card-heading .menu-instructions { font-size: 18px; max-width: 560px; margin: 0 auto 36px; color: #d9d9d9; }
+.menu-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+#project-menu fieldset { min-width: 0; margin: 0; padding: 24px; border: 1px solid #76534b; border-radius: 5px; }
+#project-menu legend { padding: 0 8px; font-size: 24px; }
+#project-menu .service-panel { background: #b24f4f; border-color: #b24f4f; }
+.service-group, .service-option { display: flex; align-items: flex-start; gap: 12px; line-height: 1.4; }
+.service-group { font-size: 25px; margin-bottom: 24px; }
+.brand-options { padding-left: 16px; display: grid; gap: 20px; }
+.service-option { font-size: 18px; }
+#project-menu input[type="checkbox"] { flex: 0 0 22px; width: 22px; height: 22px; margin: 3px 0 0; accent-color: #f2c34b; }
+.contact-panel { display: grid; gap: 18px; }
+.contact-panel label { display: grid; gap: 8px; font-size: 17px; }
+#project-menu input:not([type="checkbox"]), #project-menu select, #project-menu textarea { width: 100%; min-width: 0; padding: 12px; border: 1px solid #807068; border-radius: 4px; background: #252222; color: #fff; font: 16px "Kelly Slab", Georgia, serif; }
+#project-menu input::placeholder, #project-menu textarea::placeholder { color: #c0b5af; opacity: 1; }
+#project-menu textarea { display: block; margin-top: 14px; resize: vertical; line-height: 1.5; }
+#project-menu .project-panel { margin-top: 32px; }
+.other-services { display: flex; flex-wrap: wrap; gap: 20px 32px; margin-bottom: 24px; }
+.project-panel > label { font-size: 17px; line-height: 1.5; }
+.menu-form-actions { text-align: center; margin-top: 28px; }
+.menu-form-actions p { font-size: 16px; line-height: 1.6; }
+.menu-form-actions a { color: #f2c34b; text-decoration: underline; overflow-wrap: anywhere; }
+.download-brief { background: #b24f4f; color: #ffdd72; border: 2px solid #f2c34b; padding: 16px 24px; border-radius: 6px; font: 22px "Kelly Slab", Georgia, serif; }
+.download-brief:hover { background: #913c3c; }
+.download-brief:disabled { opacity: .6; }
+#project-menu .download-status { margin: 18px 0 10px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0 !important; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.main[data-skin="professional"] .menu-dialog { font-family: Arial, sans-serif; }
+.service-categories { min-width: 0; display: grid; gap: 14px; }
+.service-dropdown { border: 1px solid #b24f4f; border-radius: 5px; overflow: hidden; }
+.service-dropdown summary { display: flex; align-items: flex-start; gap: 12px; padding: 20px 16px; background: #b24f4f; font-size: 23px; line-height: 1.35; list-style: none; }
+.service-dropdown summary::-webkit-details-marker { display: none; }
+.service-dropdown summary > span:not(.dropdown-chevron) { flex: 1; }
+.dropdown-chevron { transition: transform 180ms ease; }
+.service-dropdown[open] .dropdown-chevron { transform: rotate(180deg); }
+.service-options { padding: 22px 18px; }
+.service-dropdown[open] .service-options { display: grid; gap: 18px; }
+.service-options p { margin: 0; font-size: 17px; line-height: 1.5; }
+.describe-problem { background: #b24f4f; border: 1px solid #f2c34b; border-radius: 4px; color: #ffdd72; padding: 12px 16px; font: inherit; text-align: left; }
+.ai-service-note { margin: 8px 0 0; color: #d9d9d9; font-size: 15px; line-height: 1.6; }
+.service-dropdown summary:focus-visible { outline: 2px solid #f2c34b; outline-offset: -4px; }
+@media (prefers-reduced-motion: reduce) { .dropdown-chevron { transition: none; } }
+@media (max-width: 640px) { .menu-form-grid { grid-template-columns: 1fr; } #project-menu fieldset { padding: 20px 16px; } .brand-options { padding-left: 8px; } }

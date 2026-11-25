@@ -1,0 +1,17 @@
+.thinking-section{padding:70px 0;border-bottom:1px solid #39352b}
+.thinking-section>h2{font:400 clamp(30px,4vw,44px)/1.2 Kelly,'Kelly Slab',serif;margin:18px 0 26px}
+.thinking-intro{font:19px/1.6 Arial,sans-serif;color:#c8c8bc;max-width:820px;margin:0 0 32px}
+.thinking-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.thinking-card{--concept-accent:#efb940;position:relative;border:1px solid #484c3e;border-top:4px solid var(--concept-accent);border-radius:5px;padding:26px;display:flex;flex-direction:column;min-width:0}
+.thinking-card[data-concept="professional"]{--concept-accent:#7199ef}.thinking-card[data-concept="soft"]{--concept-accent:#b9caa1}.thinking-card[data-concept="luxury"]{--concept-accent:#be9a59}
+.thinking-number{font:12px/1.5 Arial,sans-serif;color:var(--concept-accent);letter-spacing:2px;margin-bottom:18px}
+.thinking-card h3{font:400 26px/1.25 Kelly,'Kelly Slab',serif;margin:0 0 16px}
+.thinking-card p{font:16px/1.6 Arial,sans-serif;color:#c8c8bc;margin:0 0 24px}
+.thinking-card button{margin-top:auto;align-self:flex-start;display:inline-block;background:transparent;border:0;border-bottom:1px solid currentColor;padding:0 0 5px;color:var(--concept-accent);font:700 15px/1.5 Arial,sans-serif;cursor:pointer;text-align:left}
+.thinking-card button:hover{text-decoration:underline;text-underline-offset:4px}
+body[data-skin="professional"] .thinking-section{border-color:#cbd5e8}
+body[data-skin="professional"] .thinking-intro,body[data-skin="professional"] .thinking-card p{color:#455777}
+body[data-skin="professional"] .thinking-card{border-color:#cbd5e8;border-top-color:var(--concept-accent);background:#fff}
+body[data-skin="professional"] .thinking-card :is(button,.thinking-number){color:#214fba}
+body[data-skin="professional"] .thinking-section :is(h2,h3){font-family:Arial,sans-serif}
+@media(max-width:600px){.thinking-section{padding:50px 0}.thinking-grid{grid-template-columns:1fr}.thinking-card{padding:24px}}

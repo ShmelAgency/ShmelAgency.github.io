@@ -1,0 +1,134 @@
+
+@font-face{font-family:Manrope;src:url('Assets/fonts/Manrope-Variable.ttf') format('truetype');font-style:normal;font-weight:200 800;font-display:swap}
+:is(.main,body)[data-skin="poland"]{--poland-font:Manrope,Arial,sans-serif;font-family:var(--poland-font);font-weight:400}
+:is(.main,body)[data-skin="poland"] *{font-family:var(--poland-font)!important}
+:is(.main,body)[data-skin="poland"] :is(h1,h2,.text-wrapper,.text-wrapper-2,.text-wrapper-3,.text-wrapper-4){font-weight:600;letter-spacing:-.035em}
+:is(.main,body)[data-skin="poland"] :is(h3,.step-title,.faq-item summary){font-weight:600;letter-spacing:-.015em}
+:is(.main,body)[data-skin="poland"] :is(.site-header nav,.hot-bar-buttons,.talk-button,.download-brief,.portfolio-back){font-weight:600}
+.main .moods{display:flex;align-items:center;justify-content:center;gap:12px;height:auto;min-height:52px;padding:10px 14px;width:max-content;max-width:94vw;left:50%;transform:translateX(-50%)}
+.main .moods-label{position:static;font-size:14px;width:auto}.main .mood-choice:nth-of-type(n){position:static;width:30px;height:30px}.main .mood-choice img{max-width:26px;max-height:27px}.main .moods-label{white-space:normal}
+.main .poland-menu-button{padding:20px 28px;color:#bd1839;font:20px/1.4 Arial,sans-serif}.poland-menu-button strong{display:block;background:#bd1839;border-radius:40px;color:white;font:400 28px/1.3 Arial,sans-serif;padding:16px 28px;margin-top:12px;letter-spacing:2px}
+:is(.main,body)[data-skin="poland"]{--blue:#bd1839;--navy:#351a22;--line:#e8cbd0;color:#351a22;color-scheme:light}
+:is(.main,body)[data-skin="poland"] :focus-visible{outline-color:#bd1839!important}
+.main[data-skin="poland"]{
+ background:transparent;
+}
+.main[data-skin="poland"] .site-ending{background:transparent}
+body:has(> .main[data-skin="poland"]){
+ background-color:#fffaf7;
+ background-image:
+  radial-gradient(circle at 100% 20%,transparent 170px,rgb(189 24 57 / 11%) 171px 172px,transparent 173px 230px,rgb(189 24 57 / 8%) 231px 232px,transparent 233px),
+  radial-gradient(ellipse at 100% 0%,rgb(235 160 168 / 27%),transparent 60%),
+  radial-gradient(ellipse at 0% 50%,rgb(239 180 180 / 20%),transparent 55%),
+  radial-gradient(ellipse at 100% 100%,rgb(244 201 149 / 25%),transparent 55%),
+  repeating-linear-gradient(135deg,transparent 0 18px,rgb(189 24 57 / 4%) 18px 19px,transparent 19px 36px),
+  linear-gradient(rgb(189 24 57 / 5%) 1px,transparent 1px),
+  linear-gradient(90deg,rgb(189 24 57 / 5%) 1px,transparent 1px);
+ background-size:100% 1000px,100% 1000px,100% 1600px,100% 1300px,220px 640px,64px 64px,64px 64px;
+ background-position:right top,right top,left center,right bottom,right 32%,0 0,0 0;
+ background-repeat:no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,repeat,repeat;
+}
+.main[data-skin="poland"] .moods-label{color:#4c2430}
+.main[data-skin="poland"] .mood-choice.is-selected{box-shadow:0 0 0 2px #fff}
+.main[data-skin="poland"] .text-wrapper{color:#351a22}
+@media(min-width:769px){.main[data-skin="poland"] .frame{left:10%;width:80%}.main[data-skin="poland"] .frame .text-wrapper{width:100%;font-size:clamp(28px,4.4vw,60px);line-height:1.25}.main[data-skin="poland"] .div-wrapper{left:8%;width:84%}.main[data-skin="poland"] .text-wrapper-2{font-size:clamp(36px,5.8vw,80px);line-height:1.2}.main[data-skin="poland"] .text-wrapper-3{left:8%;width:84%;font-size:clamp(36px,5.8vw,80px)}}
+:is(.main,body)[data-skin="poland"] :is(.talk-button,.download-brief,.describe-problem){background:#bd1839;color:white;border-color:#bd1839;border-radius:5px}
+:is(.main,body)[data-skin="poland"] :is(.talk-button,.download-brief,.describe-problem):hover{background:#95102c}
+:is(.main,body)[data-skin="poland"] .talk-stamp{display:none}
+:is(.main,body)[data-skin="poland"] .talk-bee{display:none}
+:is(.main,body)[data-skin="poland"] .talk-panel{color:#351a22}
+:is(.main,body)[data-skin="poland"] .talk-panel p{color:#70525a}
+:is(.main,body)[data-skin="poland"] :is(.talk-email,.talk-kicker){color:#bd1839}
+:is(.main,body)[data-skin="poland"] .hive-footer{background:#95102c;color:white}
+:is(.main,body)[data-skin="poland"] .footer-bottom{border-color:#ffffff55}
+:is(.main,body)[data-skin="poland"] .hive-footer a{color:white}
+.main[data-skin="poland"] .menu-dialog{background:#fff;color:#351a22;border:1px solid #e8cbd0;box-shadow:0 24px 80px #351a2240}
+.main[data-skin="poland"] .menu-dialog-close{color:#bd1839}
+.main[data-skin="poland"] .menu-card-heading h2{background:#bd1839;color:white;letter-spacing:0;font-size:40px}
+.main[data-skin="poland"] .menu-card-heading .menu-instructions,.main[data-skin="poland"] .ai-service-note{color:#70525a}
+.main[data-skin="poland"] :is(.service-dropdown,#project-menu fieldset){border-color:#e8cbd0}
+.main[data-skin="poland"] .service-dropdown summary{background:#fff0f1;color:#351a22}
+.main[data-skin="poland"] #project-menu :is(input:not([type="checkbox"]),select,textarea){background:#fffafa;color:#351a22;border-color:#d9aab4;font-family:Arial,sans-serif}
+.main[data-skin="poland"] #project-menu :is(input,textarea)::placeholder{color:#85616b}
+.main[data-skin="poland"] #project-menu input[type="checkbox"]{accent-color:#bd1839}
+.main[data-skin="poland"] .menu-form-actions a{color:#bd1839}
+.main[data-skin="poland"] .process-track{padding-left:0}
+.main[data-skin="poland"] :is(.scroll-zigzag,.scroll-bee,.step-art){display:none}
+.main[data-skin="poland"] .process-row{display:block;min-height:170px;padding-bottom:40px}
+.main[data-skin="poland"] .process-step summary{grid-template-columns:100px minmax(0,1fr) auto;align-items:center;column-gap:26px;border-color:#e8cbd0}
+.main[data-skin="poland"] .step-number{grid-column:1;grid-row:1/3;display:grid;place-items:center;width:96px;height:96px;background:#bd1839;color:white;border-radius:50%;font-size:24px}
+.main[data-skin="poland"] .step-title{grid-column:2;grid-row:1/3;color:#351a22}
+.main[data-skin="poland"] .step-toggle{grid-column:3;color:#bd1839}
+.main[data-skin="poland"] .process-step[open] .step-number{background:#f4d5c5;color:#351a22}
+.main[data-skin="poland"] .process-step[open] .step-toggle{color:#95102c}
+.main[data-skin="poland"] .step-copy{padding-left:126px}
+.main[data-skin="poland"] .portfolio-dialog{background:#fff;color:#351a22;border-color:#e8cbd0}
+.main[data-skin="poland"] :is(.portfolio-header,.portfolio-tools){border-color:#e8cbd0}
+.main[data-skin="poland"] :is(.portfolio-close,.portfolio-back,.portfolio-zoom button){background:#fff0f1;color:#bd1839;border-color:#e8cbd0}
+.main[data-skin="poland"] :is(.portfolio-note,.portfolio-description,.portfolio-view-caption,.portfolio-frame figcaption){color:#70525a}
+.main[data-skin="poland"] .portfolio-eyebrow{color:#bd1839}
+.main[data-skin="poland"] .portfolio-frame button{border-color:#e8cbd0;outline-color:#d9aab4;background:#fff6f4}
+.main[data-skin="poland"] .portfolio-frame button:hover{border-color:#bd1839}
+.main[data-skin="poland"] .portfolio-canvas{background:#fff0f1}
+.main[data-skin="poland"] .portfolio-large{border-color:#e8cbd0;background:#fff6f4}
+.main[data-skin="poland"] .work-card{--card-ink:#351a22;--card-accent:#bd1839}
+:is(.main,body)[data-skin="poland"] :is(.faq-preview,.content-page){color:#351a22}
+:is(.main,body)[data-skin="poland"] :is(.faq-item,.philosophy){border-color:#e8cbd0}
+:is(.main,body)[data-skin="poland"] :is(.faq-more,.faq-item summary::after,.content-page a,.eyebrow){color:#bd1839}
+:is(.main,body)[data-skin="poland"] :is(.page-intro,.philosophy-copy,.reasons p){color:#70525a}
+body[data-skin="poland"]{background:#fffaf7;color:#351a22;font-family:Arial,sans-serif}
+body[data-skin="poland"] :is(h1,h2,h3,.intro-quote p,.philosophy-statement){font-family:Arial,sans-serif}
+body[data-skin="poland"] .site-header{background:#bd1839;color:white}
+body[data-skin="poland"] nav .active{background:#fff0f1;color:#bd1839}
+body[data-skin="poland"] .yellow-note{background:#fff0f1;color:#351a22;transform:none}
+body[data-skin="poland"] .reasons h3,body[data-skin="poland"] .philosophy-statement strong{color:#bd1839}
+body[data-skin="poland"] .divider{background:#d9aab4;color:#bd1839}body[data-skin="poland"] .divider span{background:#fffaf7}
+body[data-skin="poland"] :is(.garden,.intro-quote){display:none}
+body[data-skin="poland"] .introduction{padding-top:60px}
+body[data-skin="poland"] .page-moods .is-selected{background:#bd1839;color:white}
+body[data-skin="poland"] .page-moods .mood-choice{border-color:#bd1839}
+@media(max-width:768px){.main.main>.moods{left:auto;transform:none;width:100%;min-height:56px}.main .moods-label{width:auto}.main[data-skin="poland"] .process-step summary{grid-template-columns:70px minmax(0,1fr) auto;column-gap:14px}.main[data-skin="poland"] .step-number{width:68px;height:68px;font-size:19px}.main[data-skin="poland"] .step-copy{padding-left:0}.main[data-skin="poland"] .menu-card-heading h2{font-size:32px}}
+
+/* Poland: white and crimson, with a quiet geometric folk-flower pattern. */
+body:has(> .main[data-skin="poland"]){background:#fffaf7;background-image:radial-gradient(ellipse at top right,#f9d9df88,transparent 60%),repeating-linear-gradient(90deg,transparent 0 63px,#bd183907 63px 64px);background-size:100% 900px,64px 64px}
+:is(.main,body)[data-skin="poland"] .shared-header{--header-font:Manrope,Arial,sans-serif;--bar-background:#bd1839;--bar-ink:#fff;--mood-background:#fffaf7;--mood-ink:#351a22}
+:is(.main,body)[data-skin="poland"] header.shared-header .shared-moods{background:#fffaf7;color:#351a22;border-color:#e8cbd0;border-bottom:3px solid #bd1839}
+:is(.main,body)[data-skin="poland"] header.shared-header .moods-label{color:#70525a!important}
+:is(.main,body)[data-skin="poland"] header.shared-header .mood-pills .mood-choice{border-color:#d9aab4}
+:is(.main,body)[data-skin="poland"] header.shared-header .mood-pills .mood-choice.is-selected{background:#bd1839;border-color:#bd1839;color:#fff}
+:is(.main,body)[data-skin="poland"] header.shared-header .mood-collapse-toggle{background:#fffaf7;color:#95102c;border-color:#e8cbd0}
+:is(.main,body)[data-skin="poland"] header.shared-header .shared-nav a[data-nav-role="contact"]{background:#fff;color:#95102c}
+:is(.main,body)[data-skin="poland"] .hive-footer{background:#95102c;background-image:radial-gradient(ellipse at 50% 0,#ffffff0d 0 25%,transparent 26%),radial-gradient(ellipse at 0 50%,#ffffff0d 0 25%,transparent 26%);background-size:36px 36px}
+.main[data-skin="poland"] .service-problem{border-color:#bd1839;background:#fff0f1}
+.main[data-skin="poland"] .work-card{--card-ink:#351a22;--card-accent:#bd1839}
+@media(min-width:769px){.main.main[data-skin="poland"]{margin-top:calc(var(--visible-bars-height,var(--floating-bars-height)) + 24px)}}
+@media(max-width:768px){.main.main[data-skin="poland"]{margin-top:calc(var(--visible-bars-height,var(--floating-bars-height)) + 24px);padding-top:20px}}
+
+body[data-skin="poland"] .thinking-section{border-color:#e8cbd0}
+body[data-skin="poland"] :is(.thinking-intro,.thinking-card p){color:#70525a}
+body[data-skin="poland"] .thinking-card{border-color:#e8cbd0;border-top-color:#bd1839;background:#fff}
+body[data-skin="poland"] .thinking-card :is(button,.thinking-number){color:#95102c}
+
+/* The flag stays split halfway down the viewport as the page scrolls. */
+body[data-skin="poland"],body:has(> .main[data-skin="poland"]){background:linear-gradient(to bottom,#fff 0 50%,#dc143c 50% 100%) fixed!important;background-size:100% 100vh!important}
+.main.main[data-skin="poland"]{background:transparent}
+:is(.main,body)[data-skin="poland"] :is(.faq-preview,.talk-panel,.content-page,.introduction,.thinking-section,.process-track){background:#fffffff5;border-radius:18px;box-shadow:6px 6px 0 #351a2220}
+:is(.main,body)[data-skin="poland"] :is(.faq-preview,.talk-panel,.content-page,.thinking-section){padding:clamp(20px,4vw,56px)}
+.main[data-skin="poland"] :is(.text-wrapper,.text-wrapper-2,.text-wrapper-3,.text-wrapper-4){color:#351a22;background:#fff;box-decoration-break:clone;-webkit-box-decoration-break:clone;text-shadow:2px 2px 0 #ffdce3}
+.main[data-skin="poland"] .text-wrapper-2{color:#dc143c;font-family:Impact,'Arial Black',sans-serif!important;font-weight:900;letter-spacing:.015em;transform:rotate(-3deg);text-shadow:3px 3px 0 #351a22}
+:is(.main,body)[data-skin="poland"] .hive-footer{background:#a5092a;border-top:5px solid #fff}
+.poland-meme-sticker{display:none;pointer-events:none}
+body[data-skin="poland"]>.poland-meme-sticker,body:has(> .main[data-skin="poland"])>.poland-meme-sticker{position:fixed;right:20px;bottom:20px;z-index:25;display:grid;justify-items:center;gap:5px;width:150px;transform:rotate(7deg);filter:drop-shadow(3px 5px 0 #0003)}
+.polandball{position:relative;width:100px;height:88px;border:4px solid #26181d;border-radius:47% 53% 45% 55%;background:linear-gradient(#fff 0 49%,#dc143c 49%);transform:rotate(-8deg)}
+.polandball span{position:absolute;top:26px;width:25px;height:28px;background:#fff;border:3px solid #26181d;border-radius:48%}
+.polandball span:first-child{left:20px;transform:rotate(-13deg)}
+.polandball span:last-child{right:13px;top:23px;transform:rotate(12deg)}
+.poland-meme-sticker strong{padding:5px 8px;background:#fff;color:#dc143c;border:2px solid #26181d;font:900 16px/1.1 Impact,'Arial Black',sans-serif;white-space:nowrap}
+.poland-meme-sticker small{padding:3px 6px;background:#26181d;color:#fff;font:10px/1.2 Arial,sans-serif}
+@media(max-width:768px){body[data-skin="poland"]>.poland-meme-sticker,body:has(> .main[data-skin="poland"])>.poland-meme-sticker{right:8px;bottom:10px;width:94px}.polandball{width:60px;height:54px;border-width:3px}.polandball span{top:15px;width:15px;height:18px;border-width:2px}.polandball span:first-child{left:10px}.polandball span:last-child{right:7px;top:13px}.poland-meme-sticker strong{font-size:10px;padding:4px}.poland-meme-sticker small{display:none}}
+@media print{.poland-meme-sticker{display:none!important}}
+
+/* Keep the original bee backdrop from covering the flag. */
+.main[data-skin="poland"] > :is(.hero-background,.asset-moving-bee,.asset-working-bee,.asset-tea-bee,.asset-buzzness,.asset-document-bee,.asset-garden,.asset-zigzag,.asset-random-star){display:none}
+.main[data-skin="poland"] .shmel-menu-button{display:none!important}
+.main[data-skin="poland"] .professional-menu-button{display:block!important}

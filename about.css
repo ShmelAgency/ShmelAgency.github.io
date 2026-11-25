@@ -1,0 +1,113 @@
+@font-face{font-family:Kelly;src:url('Assets/fonts/KellySlab-Regular.ttf') format('truetype');font-display:swap}
+:root{color-scheme:dark;--yellow:#efb940;--mint:#46b6a9;--ink:#101010;--text:#efeee8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--text);font-family:Arial,Helvetica,sans-serif;font-size:19px;line-height:1.5}
+a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--yellow);outline-offset:6px}
+.skip-link{position:absolute;left:20px;top:-80px;background:var(--yellow);color:var(--ink);padding:12px;z-index:2}.skip-link:focus{top:12px}
+.site-header{max-width:1320px;margin:24px auto 0;padding:12px 24px;background:var(--mint);color:var(--ink);display:flex;align-items:center;justify-content:space-between;gap:24px;font:16px Kelly,serif}
+.brand{display:flex;align-items:center;gap:12px}.brand img{width:42px;height:34px;object-fit:contain}.brand span{letter-spacing:2px}
+nav{display:flex;align-items:center;gap:32px}nav a{padding:6px 0}nav .active{background:#d78685;padding:6px 16px;border-radius:2px}nav a:hover{text-decoration:underline}
+main{max-width:1040px;padding:0 40px;margin:auto}
+.intro-quote{position:relative;text-align:center;padding:75px 0 80px}.intro-quote p{font:clamp(21px,2.5vw,30px)/1.4 Kelly,serif;margin:20px 0}.garden{width:100px;height:85px;object-fit:contain;margin-top:10px}
+.eyebrow{text-transform:uppercase;letter-spacing:2.5px;font-size:12px;font-weight:700;color:var(--yellow)}
+h1,h2,h3{font-family:Kelly,Georgia,serif;font-weight:400;line-height:1.15;margin:0}h1{font-size:clamp(38px,5.2vw,64px);text-transform:uppercase;margin:18px 0 28px}h2{font-size:clamp(30px,4vw,44px)}h3{font-size:23px}
+.introduction>h1,.introduction>.eyebrow{display:block;text-align:center}.divider{display:flex;align-items:center;justify-content:space-between;width:240px;height:2px;background:#9e7d32;color:var(--yellow);margin:30px auto 50px}.divider span{background:var(--ink);font-size:18px;line-height:1}
+p{margin:0 0 22px}.intro-copy{max-width:840px;margin:auto;font-size:22px;line-height:1.4}.audience-row{display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:center;margin:64px 0 90px}.audience-row h2{font-size:28px;text-transform:uppercase}ul{padding-left:24px;margin-bottom:0}.yellow-note{background:var(--yellow);color:#27231c;border-radius:8px;padding:30px;text-align:center;transform:rotate(-1deg)}.yellow-note h3{text-transform:uppercase;font-size:26px;margin-bottom:20px}.yellow-note p{margin:0;line-height:1.35}
+.philosophy{padding:50px 0 55px;border-top:1px solid #39352b;border-bottom:1px solid #39352b}.philosophy h2{margin:18px 0 30px}.philosophy-copy{max-width:830px;color:#cecec8}.philosophy-statement{font:clamp(23px,3vw,30px)/1.4 Kelly,serif;margin:32px 0 0}.philosophy-statement strong{font-weight:400;color:var(--yellow)}
+.why{padding:80px 0}.why>h2{text-align:center;text-transform:uppercase}.reasons{display:grid;grid-template-columns:1fr 1fr;gap:60px 80px}.reasons article{position:relative;padding-top:14px}.reasons h3{color:var(--yellow);text-transform:uppercase;margin-bottom:24px;font-size:23px}.reasons p{color:#cecec8;line-height:1.45}.reasons p:last-child{margin-bottom:0}
+.contact-cta{text-align:center;padding:55px 20px 80px}.contact-cta h2{margin:20px 0 32px;font-size:clamp(36px,5vw,56px)}.contact-cta>a{display:inline-flex;align-items:center;gap:28px;background:var(--yellow);color:var(--ink);padding:16px 24px;font:18px Kelly,serif}.contact-cta>a:hover{background:#ffd16a}
+footer{max-width:1320px;margin:0 auto 24px;display:flex;justify-content:space-between;gap:24px;padding:30px;background:var(--yellow);color:var(--ink);font:17px Kelly,serif}footer a:hover{text-decoration:underline}
+@media(max-width:700px){body{font-size:17px}.site-header{margin:12px;padding:12px;gap:12px}.brand span{display:none}nav{gap:15px;font-size:13px}nav .active{padding:6px 8px}main{padding:0 24px}.intro-quote{padding:55px 0}.intro-copy{font-size:19px}.audience-row{grid-template-columns:1fr;gap:32px;margin:40px 0 60px}.yellow-note{transform:none}.reasons{grid-template-columns:1fr;gap:40px}.why{padding:60px 0}.divider{margin-bottom:36px}footer{margin:0 12px 12px;flex-direction:column;padding:24px;font-size:15px}.contact-cta{padding:30px 0 60px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.team-section > h2 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 20px;
+}
+
+.team-member {
+  position: relative;
+  padding: clamp(18px, 3vw, 32px);
+  border: 1px solid currentColor;
+  border-color: color-mix(in srgb, currentColor 25%, transparent);
+  border-radius: 8px;
+}
+
+.team-pronouns {
+  display: inline-block;
+  font: 400 14px/1.4 Arial, sans-serif;
+}
+
+.team-flag {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 20px;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px color-mix(in srgb, currentColor 25%, transparent);
+}
+
+.team-flag-lt {
+  background: linear-gradient(#fdb913 0 33.33%, #006a44 33.33% 66.67%, #c1272d 66.67%);
+}
+
+.team-flag-us {
+  background: repeating-linear-gradient(#b31942 0 7.69%, #fff 7.69% 15.38%);
+}
+
+.team-flag-us::before {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 53.85%;
+  background: radial-gradient(circle, #fff 0 .36px, transparent .55px) 0 0 / 2.1px 2.1px #3c3b6e;
+}
+
+.team-member:only-child {
+  width: min(100%, 380px);
+  justify-self: center;
+  text-align: center;
+}
+
+.team-member:only-child .team-portrait {
+  margin-inline: auto;
+}
+
+.team-portrait {
+  display: block;
+  width: 112px;
+  height: 112px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-member p {
+  margin: 12px 0 0;
+}
+
+.team-member .team-role {
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.team-member a {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--yellow);
+  font-size: 16px;
+}
+
+body[data-skin="professional"] .team-member a {
+  color: var(--blue);
+}

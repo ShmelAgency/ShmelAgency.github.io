@@ -1,0 +1,32 @@
+html,body,div,span,h1,h2,h3,h4,p,a,img,ol,ul,li,fieldset,form,label,legend,article,aside,footer,header,nav,section{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,footer,header,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  min-height: 100%;
+}
+ 
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "Kelly Slab-Regular";
+  src: url("Assets/fonts/KellySlab-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Kelly Slab";
+  src: url("Assets/fonts/KellySlab-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
