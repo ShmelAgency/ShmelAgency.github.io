@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1800" viewBox="0 0 1600 1800" fill="none">
+ <defs>
+  <linearGradient id="water" x1="0" y1="300" x2="1550" y2="1100" gradientUnits="userSpaceOnUse"><stop stop-color="#57cdbb" stop-opacity=".1"/><stop offset=".45" stop-color="#56c3e1" stop-opacity=".3"/><stop offset="1" stop-color="#a7e67a" stop-opacity=".16"/></linearGradient>
+  <linearGradient id="leaf" x1="100" y1="900" x2="1500" y2="1300" gradientUnits="userSpaceOnUse"><stop stop-color="#b6e985" stop-opacity=".27"/><stop offset=".55" stop-color="#67d4c2" stop-opacity=".2"/><stop offset="1" stop-color="#7bd2ec" stop-opacity=".12"/></linearGradient>
+  <linearGradient id="fade" x2="0" y2="1"><stop stop-color="white" stop-opacity="0"/><stop offset=".15" stop-color="white"/><stop offset=".85" stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#8adccf" stop-opacity=".24"/><stop offset="1" stop-color="#8adccf" stop-opacity="0"/></radialGradient>
+  <radialGradient id="pearl" cx=".3" cy=".2" r=".8"><stop stop-color="white" stop-opacity=".8"/><stop offset=".2" stop-color="#dcfff8" stop-opacity=".12"/><stop offset=".75" stop-color="#94d9cd" stop-opacity=".04"/><stop offset="1" stop-color="white" stop-opacity=".65"/></radialGradient>
+  <mask id="edges"><path fill="url(#fade)" d="M0 0h1600v1800H0z"/></mask>
+ </defs>
+ <g mask="url(#edges)">
+  <ellipse cx="1500" cy="400" rx="650" ry="440" fill="url(#glow)"/>
+  <ellipse cx="50" cy="1300" rx="680" ry="480" fill="url(#glow)"/>
+  <path d="M-150 270C380 920 760 80 1750 650L1750 880C850 260 380 1140-150 470Z" fill="url(#water)"/>
+  <path d="M-150 270C380 920 760 80 1750 650" stroke="white" stroke-opacity=".75" stroke-width="2"/>
+  <path d="M-150 300C380 950 760 110 1750 680" stroke="#70bfc8" stroke-opacity=".3"/>
+  <path d="M-150 326C380 976 760 136 1750 706" stroke="white" stroke-opacity=".55"/>
+  <path d="M-150 1190C520 540 950 1670 1750 1030L1750 1230C930 1840 520 760-150 1400Z" fill="url(#leaf)"/>
+  <path d="M-150 1190C520 540 950 1670 1750 1030" stroke="white" stroke-opacity=".85" stroke-width="2"/>
+  <path d="M-150 1220C520 570 950 1700 1750 1060" stroke="#65bba4" stroke-opacity=".28"/>
+  <path d="M-150 1245C520 595 950 1725 1750 1085" stroke="white" stroke-opacity=".6"/>
+  <g fill="url(#pearl)" stroke="white" stroke-opacity=".6"><circle cx="1435" cy="480" r="72"/><circle cx="130" cy="1080" r="48"/><circle cx="1510" cy="1310" r="23"/><circle cx="300" cy="360" r="15"/></g>
+  <g fill="white" opacity=".75"><circle cx="1385" cy="880" r="3"/><circle cx="1465" cy="940" r="2"/><circle cx="185" cy="640" r="3"/><circle cx="240" cy="1410" r="2"/></g>
+ </g>
+</svg>
